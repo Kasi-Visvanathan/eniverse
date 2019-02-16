@@ -1,0 +1,1 @@
+web: gunicorn jazztest.wsgi --log-file -
