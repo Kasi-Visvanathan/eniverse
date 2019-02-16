@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Jazz solutions</title>
+<style>
+#f1{color:white; font-family:jokerman; font-size:500%;}
+#f2{color:white; font-family:serif;font-size:400%}
+#f3{color:black; font-family:calibri;}
+#f4{color:black; font-family:serif;}
+</style>
+</head>
+<body>
+<table  height="100%" width="100%" cellspacing="0">
+<tr>
+<td bgcolor="#000000" align="right" width="5%"><p id="f1"><i>J</i><small><small>A</small></small></p></td>
+<td bgcolor="#000000" align="left" width="70"><p id="f2">zz</p></td>
+<td rowspan="4" bgcolor="#ffffff" height="100%" width="25%">
+<form action="{% url 'loggedin'%}">
+
+<table height="100%" width="100%" cellspacing="1">
+<tr>
+<td colspan="2">
+<h2 align="center" id="f3">Login To Continue</h2></td></tr>
+<tr><td align="right"><p id="f3">Username</p></td>
+<td align="right">
+<input type="text" name="username"></td>
+<tr><td align="right"><p id="f3">Password</p></td>
+<td align="right">
+<input type="password" name="password"></td></tr>
+<tr><td colspan="2" align="right"><!--a href="forgot.html"--><small>Forgot password?</small></a></td></tr>
+<tr><td colspan="2" align="center"><br>
+<input type="submit" name="signin" value="Signin"></td></tr>
+<tr><td colspan="2" align="center"><br><p id="f4"><b>Don't have an account?</b></p></td></tr>
+<tr><td colspan="2" align="center"><a href="{% url 'signup' %}">Join Us!</a></td></tr>
+</table>
+</form></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#ffffff" height="5%"></td>
+</tr>
+<tr>
+{% load static %}
+<td colspan="2" height="55%"><img src="{% static 'images/img8.jpg' %}" width="100%"></td>
+</tr>
+<tr>
+<td colspan="2" bgcolor="#000000" height="20%"></td>
+</tr>
+</table>
+</body>
+</html>
